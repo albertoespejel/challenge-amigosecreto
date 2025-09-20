@@ -1,7 +1,12 @@
+/* Nombres sorteados tachados */
+.tachado {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
+    --color-primary: #000209;
+    --color-secondary: #fb2d2d;
+    --color-tertiary: #f56e06;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
     --color-text: #444444;
@@ -21,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'UnifrakturCook', cursive;
 }
 
 .main-content {
@@ -29,6 +35,9 @@ body {
     height: 100%;
     width: 100%;
 }
+
+/* Main title font and spacing */
+
 
 /* Banner */
 .header-banner {
@@ -55,19 +64,22 @@ body {
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
+    font-family: 'UnifrakturCook', cursive;
+    font-weight: 700;
     color: var(--color-white);
+    margin-right: 24px;
 }
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: 'UnifrakturCook', cursive !important;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: #e55720 !important;
     margin: 10px 0;
     text-align: center;
+    background: #fffbe7;
+    border-radius: 8px;
+    padding: 4px 12px;
 }
 
 /* Contenedores de entrada y botón */
@@ -85,6 +97,13 @@ body {
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+/* Placeholder font for input */
+.input-name::placeholder {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 16px;
 }
 
 .button-container {
@@ -100,14 +119,14 @@ body {
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
+    font-family: 'UnifrakturCook', cursive;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botón */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    font-family: 'UnifrakturCook', cursive;
     font-size: 16px;
     border: 2px solid #000;
     border-radius: 25px;
@@ -129,7 +148,7 @@ button {
 ul {
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
+    font-family: 'UnifrakturCook', cursive;
     font-size: 18px;
     margin: 20px 0;
 }
